@@ -1,0 +1,103 @@
+/* Global Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Body Styling */
+body {
+  background: #000; /* Black background for sleek design */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  color: #fff; /* White text color for contrast */
+}
+
+/* Counter Name Styling (Centered Above Box) */
+h1 {
+  font-size: 2.5rem; /* Large font size for the counter name */
+  font-weight: 700; /* Bold font for emphasis */
+  color: #f39c12; /* Light yellow color */
+  text-align: center;
+  margin-bottom: 2rem; /* Space between h1 and container */
+  text-transform: uppercase; /* Uppercase letters for a professional feel */
+  letter-spacing: 2px; /* Space between letters */
+}
+
+/* Container Styling */
+.container {
+  background: #1c1c1c; /* Dark box background */
+  padding: 2rem;
+  border-radius: 20px; /* Rounded corners for smooth look */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
+  text-align: center;
+  width: 100%;
+  max-width: 500px; /* Box max width */
+}
+
+/* Counter Number Styling (Centered like a button) */
+.container .number {
+  font-size: 8rem; /* Large size for counter */
+  font-weight: 700; /* Bold for prominence */
+  color: #f39c12;
+  margin-bottom: 2rem;
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 10px; /* Rounded button look */
+  background-color: #000; /* Dark background to make the counter pop */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for emphasis */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth hover effect */
+  cursor: pointer;
+}
+
+/* Hover Effect for the Counter */
+.container .number:hover {
+  background-color: #000; /* Lighter shade on hover */
+  transform: scale(1.1); /* Slight increase in size on hover */
+}
+
+/* Button Container Styling */
+.btns-container {
+  display: flex;
+  justify-content: space-between; /* Space buttons evenly */
+  gap: 1.5rem; /* Space between buttons */
+  margin-top: 2rem;
+}
+
+/* Button Styling */
+.increment {
+  padding: 12px 25px;
+  border: 2px solid #f39c12; 
+  border-radius: 30px; /* Rounded button edges */
+  font-size: 1.2rem; /* Button text size */
+  background-color: #000; /* Button background */
+  color: #fff; /* White text color */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s; /* Smooth hover effects */
+  outline: none;
+  width: 100px; /* Fixed button width for consistency */
+}
+
+/* Button Hover Effect */
+.increment:hover {
+  background-color: #000; 
+  color: #1c1c1c;
+  transform: translateY(-3px); /* Slight lift on hover */
+}
+
+/* Active State for Buttons */
+.increment:active {
+  transform: translateY(1px); /* Button presses down on click */
+}
+
+/* Disabled Button Styling */
+.increment:disabled {
+  background-color: #1c1c1c; 
+  color: #000;
+  cursor: not-allowed; /* Disable hover effect */
+}
