@@ -13,7 +13,7 @@ function Counter() {
         setCount((prevCount) => prevCount + 1); // Increment counter every second
       }, 1000);
       setIntervalId(id);  // Store interval ID to stop the counter later
-      setIsRunning(true);  // Mark counter as running
+           setIsRunning(true);  // Mark counter as running
     }
   };
 
